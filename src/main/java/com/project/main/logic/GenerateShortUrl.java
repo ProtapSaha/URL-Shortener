@@ -6,11 +6,9 @@ public class GenerateShortUrl {
 	
 	public static String getShortUrl(String url) {
 
-//      String shortUrl = Hashing.murmur3_32_fixed().hashString(url, Charset.defaultCharset()).toString();
-//      return shortUrl;
-  	String randomChar = getRandomChars();
+		String randomChar = getRandomChars();
 //  	String shortUrl = ("http://localhost:8080/"+randomChar);
-  	return randomChar;
+		return randomChar;
   }
   public static String getRandomChars() {
 		String randomStr = "";

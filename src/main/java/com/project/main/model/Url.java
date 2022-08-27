@@ -21,6 +21,7 @@ public class Url {
     private int id;
     private String shorturl;
     private String originalurl;
+    
 	public String getShorturl() {
 		return shorturl;
 	}

@@ -13,7 +13,6 @@ import com.project.main.service.UrlService;
 
 @RestController
 @RequestMapping("url/shortner")
-//@CrossOrigin(origins = "http://localhost:4200")
 public class ShortenerRestController {
 
     @Autowired
@@ -29,8 +28,8 @@ public class ShortenerRestController {
         return urlService.generateShortUrl(url);
     }
 
-//    @GetMapping("/{id}")
-//    public void getOriginlUrl(HttpServletResponse response, @PathVariable String id) throws IOException {
-//        response.sendRedirect(urlService.getOriginlUrl(id));
-//    }
+    @GetMapping("/redirect/{id}")
+    public void getOriginlUrl(HttpServletResponse response, @PathVariable String id) throws IOException {
+        response.sendRedirect(urlService.getOriginlUrl(id));
+    }
 }
