@@ -7,7 +7,6 @@ public class GenerateShortUrl {
 	public static String getShortUrl(String url) {
 
 		String randomChar = getRandomChars();
-//  	String shortUrl = ("http://localhost:8080/"+randomChar);
 		return randomChar;
   }
   public static String getRandomChars() {
